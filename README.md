@@ -1,4 +1,4 @@
-# Audio Deepfake Classification
+# Deepfake Voice Classification
 
 This project focuses on building a deep learning model for classifying audio files as either genuine (bonafide) or manipulated (spoof). The objective is to detect audio deepfakes, which are manipulated audio recordings designed to impersonate a genuine audio source. The ASVspoof 2019 dataset is used for training and evaluating the model.
 
@@ -27,11 +27,12 @@ The model architecture is designed to extract features from Mel spectrograms and
   <img src="eval/audio_classifier.h5.png" alt="Image Description" width="300"/>
 </div>
 
-## Metrics 
+## Metrics
 
 ![prc](eval/prc.png)
 ![cc](eval/cc.png)
 ![roc](eval/roc.png)
+
 ## Getting Started
 
 ### Installation
@@ -39,14 +40,15 @@ The model architecture is designed to extract features from Mel spectrograms and
 To use this project, follow these steps:
 
 1. **Clone the repository:**
+
 ```bash
-   git clone https://github.com/sksmta/audio-deepfake-detection.git
-   cd audio-deepfake-detection
+   git clone https://github.com/AnishSarkar22/deepfake-voice-detection.git
+   cd deepfake-voice-detection
 ```
 
 2. **Download the ASVspoof 2019 dataset:**
 
-Download the dataset from [here](https://www.asvspoof.org/) and extract it into the dataset directory.
+Download the dataset from [here](https://datashare.ed.ac.uk/handle/10283/3336) and extract it into the dataset directory.
 
 ## Contribution
 
@@ -55,23 +57,31 @@ Contributions are welcome and greatly appreciated. To contribute to this project
 1. Fork the repository to your own GitHub account.
 
 2. Clone the forked repository to your local machine:
- ```bash
-   git clone https://github.com/sksmta/audio-deepfake-detection.git
-   cd audio-deepfake-detection
- ```
+
+```bash
+  git clone https://github.com/AnishSarkar22/deepfake-voice-detection.git
+  cd deepfake-voice-detection
+```
+
 3. **Create a new branch for your contribution:**
+
 ```bash
    git checkout -b feature/your-feature-name
 ```
+
 4. Make your changes, improvements, or bug fixes.
 5. **Commit your changes with a meaningful commit message:**
+
 ```bash
 git commit -m "Add your commit message here"
 ```
+
 6. **Push your changes to your GitHub repository:**
+
 ```bash
 git push origin feature/your-feature-name
 ```
+
 7. Open a pull request on the original repository's `main` branch. Provide a clear description of your contribution.
 8. Your pull request will be reviewed, and any necessary feedback will be given. Once approved, your contribution will be merged into the main project.
 
@@ -79,5 +89,6 @@ Thank you for your valuable contributions to make this project even better!
 
 ## Acknowledgments
 
-- ASVspoof 2019 dataset: [Download](https://www.asvspoof.org/)
+- Special thanks to [**@sksmta**](https://github.com/sksmta) for their open-source project [**audio-deepfake-detection**](https://github.com/sksmta/audio-deepfake-detection), which served as a valuable reference and inspiration for this work. Their contribution to deepfake audio detection research and implementation greatly aided the understanding and development of related techniques used in this project.
+- ASVspoof 2019 dataset: [dataset link](https://www.asvspoof.org/)
 - Netron: [GitHub Repository](https://github.com/lutzroeder/netron)
